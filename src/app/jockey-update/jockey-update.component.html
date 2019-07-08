@@ -1,0 +1,30 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+
+        <h3 class="mb-3 text-center">Update Jockey</h3>
+
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="jockeyData.name" class="form-control" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="jockeyData.email" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="jockeyData.phone" class="form-control" placeholder="Phone">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block" (click)="updateJockey()">Update Jockey</button>
+        </div>
+
+    </div>
+
+    <!-- Cancel if not to edit jockey information -->
+    <div class="no-data text-center mt-5">
+        <button class="btn btn-outline-secondary px-5" routerLink="/jockeys-list">Cancel - Return to Jockeys
+            List</button>
+    </div>
+</div>

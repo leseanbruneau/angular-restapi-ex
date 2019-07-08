@@ -1,0 +1,45 @@
+<div class="container custom-container-2">
+
+    <!-- Show it when there is no jockey -->
+    <div class="no-data text-center" *ngIf="Jockey.length == 0">
+        <p>There is no jockey added yet!</p>
+        <button class="btn btn-outline-primary" routerLink="/create-jockey">Add Jockey</button>
+    </div>
+
+    <!-- Jockeys list table, it hides when there is no jockey -->
+    <div *ngIf="Jockey.length !== 0">
+        <h3 class="mb-3 text-center">Jockeys List</h3>
+
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">User Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let jockey of Jockey">
+                        <td>{{jockey.id}}</td>
+                        <td>{{jockey.name}}</td>
+                        <td>{{jockey.email}}</td>
+                        <td>{{jockey.phone}}</td>
+                        <td>
+                            <span class="edit pr-3" routerLink="/jockey-update/{{jockey.id}}">Edit</span>
+                            <span class="delete" (click)="deleteJockey(jockey.id)">Delete</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Show it when there is a jockey -->
+    <div class="no-data text-center" *ngIf="Jockey.length > 0">
+        <button class="btn btn-outline-primary" routerLink="/create-jockey">Add Jockey</button>
+    </div>
+</div>
