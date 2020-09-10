@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "^10.1.0",
     "@angular/router": "^10.1.0",
     "elliptic": "^6.5.3",
+    "handlebars": "^4.7.6",
+    "http-proxy": "^1.18.1",
     "rxjs": "^6.6.2",
     "serialize-javascript": "^4.0.0",
     "tslib": "^2.0.1",
