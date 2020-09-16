@@ -25,6 +25,7 @@
     "rxjs": "^6.6.2",
     "serialize-javascript": "^4.0.0",
     "tslib": "^2.0.1",
+    "yargs-parser": "^20.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
