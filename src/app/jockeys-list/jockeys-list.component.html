@@ -28,8 +28,16 @@
                         <td>{{jockey.email}}</td>
                         <td>{{jockey.phone}}</td>
                         <td>
+                            <span class="pr-3">
+                                <button class="btn btn-success" routerLink="/jockey-update/{{jockey.id}}">Edit</button>
+                            </span>
+                            <span class="pl-3">
+                                <button class="btn btn-danger" (click)="deleteJockey(jockey.id)">Delete</button>
+                            </span>
+                            <!--
                             <span class="edit pr-3" routerLink="/jockey-update/{{jockey.id}}">Edit</span>
                             <span class="delete" (click)="deleteJockey(jockey.id)">Delete</span>
+                            -->
                         </td>
                     </tr>
                 </tbody>
@@ -40,6 +48,9 @@
 
     <!-- Show it when there is a jockey -->
     <div class="no-data text-center" *ngIf="Jockey.length > 0">
+        <!--
         <button class="btn btn-outline-primary" routerLink="/create-jockey">Add Jockey</button>
+        -->
+        <button class="btn btn-primary" routerLink="/create-jockey">Add Jockey</button>
     </div>
 </div>

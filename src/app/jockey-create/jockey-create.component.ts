@@ -18,7 +18,7 @@ export class JockeyCreateComponent implements OnInit {
 
   ngOnInit() { }
 
-  addJockey(dataJockey) {
+  addJockey() {
     this.restApi.createJockey(this.jockeyDetails).subscribe((data: {}) => {
       this.router.navigate(['/jockeys-list'])
     })
