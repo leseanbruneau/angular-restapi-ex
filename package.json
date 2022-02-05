@@ -23,7 +23,7 @@
     "elliptic": "^6.5.3",
     "handlebars": "^4.7.6",
     "http-proxy": "^1.18.1",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "rxjs": "^6.6.2",
     "serialize-javascript": "^4.0.0",
     "tslib": "^2.0.0",
